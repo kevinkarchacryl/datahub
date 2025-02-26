@@ -148,7 +148,7 @@ class SupersetConfig(
     )
     database_pattern: Optional[AllowDenyPattern] = Field(
         default=None,
-        description="Regex patterns for databases to filter in ingestion.",
+        description="Regex patterns for databases to filter out datasets in ingestion.",
     )
     username: Optional[str] = Field(default=None, description="Superset username.")
     password: Optional[str] = Field(default=None, description="Superset password.")
